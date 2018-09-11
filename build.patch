@@ -31,7 +31,8 @@
  #
 -PREFIX=/usr/local
 +PREFIX=/usr/
- LIBDIR=$(PREFIX)/lib
+-LIBDIR=$(PREFIX)/lib
++LIBDIR=$(PREFIX)/lib64
  INCDIR=$(PREFIX)/include
  MANDIR=$(PREFIX)/share/man
 @@ -190,7 +190,7 @@

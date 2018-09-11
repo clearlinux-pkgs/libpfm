@@ -4,7 +4,7 @@
 #
 Name     : libpfm
 Version  : 4.10.1
-Release  : 2
+Release  : 3
 URL      : http://sourceforge.net/projects/perfmon2/files/libpfm4/libpfm-4.10.1.tar.gz
 Source0  : http://sourceforge.net/projects/perfmon2/files/libpfm4/libpfm-4.10.1.tar.gz
 Summary  : No detailed summary available
@@ -64,11 +64,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536633033
+export SOURCE_DATE_EPOCH=1536633184
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1536633033
+export SOURCE_DATE_EPOCH=1536633184
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/libpfm
 cp COPYING %{buildroot}/usr/share/doc/libpfm/COPYING
@@ -83,7 +83,7 @@ cp debian/copyright %{buildroot}/usr/share/doc/libpfm/debian_copyright
 /usr/include/perfmon/perf_event.h
 /usr/include/perfmon/pfmlib.h
 /usr/include/perfmon/pfmlib_perf_event.h
-/usr/lib/libpfm.so
+/usr/lib64/libpfm.so
 /usr/share/man/man3/libpfm.3
 /usr/share/man/man3/libpfm_amd64.3
 /usr/share/man/man3/libpfm_amd64_fam10h.3
@@ -177,8 +177,8 @@ cp debian/copyright %{buildroot}/usr/share/doc/libpfm/debian_copyright
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/libpfm.so.4
-/usr/lib/libpfm.so.4.10.1
+/usr/lib64/libpfm.so.4
+/usr/lib64/libpfm.so.4.10.1
 
 %files license
 %defattr(-,root,root,-)
