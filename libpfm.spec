@@ -4,7 +4,7 @@
 #
 Name     : libpfm
 Version  : 4.10.1
-Release  : 3
+Release  : 4
 URL      : http://sourceforge.net/projects/perfmon2/files/libpfm4/libpfm-4.10.1.tar.gz
 Source0  : http://sourceforge.net/projects/perfmon2/files/libpfm4/libpfm-4.10.1.tar.gz
 Summary  : No detailed summary available
